@@ -230,6 +230,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
     ro.surface_flinger.use_color_management=true
 
+# Time
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.delta_time.enable=true
+
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
