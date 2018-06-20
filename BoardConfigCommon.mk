@@ -25,6 +25,8 @@ DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
