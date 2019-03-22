@@ -449,8 +449,9 @@ service vendor.thermal-engine /vendor/bin/thermal-engine
 
 service vendor.time_daemon /vendor/bin/time_daemon
    class main
-   user root
-   group root
+   user system
+   group system
+   capabilities SYS_TIME
 
 on property:vold.decrypt=trigger_restart_framework
     start config_bt_addr
