@@ -240,6 +240,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.iwlan_mux=9 \
     persist.data.df.dev_name=rmnet_usb0
 
+# Surfaceflinger
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.protected_contents=true
+
 # Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
