@@ -187,20 +187,6 @@ vendor/lib64/hw/gatekeeper.msm8937.so|6f37b74a986d7b5852f107ca87792f97b036ba93
 # GPS
 etc/cacert_location.pem:vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
 etc/xtra_root_cert.pem:vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
-etc/permissions/com.qti.location.sdk.xml
-etc/permissions/com.qualcomm.location.vzw_library.xml
-etc/permissions/com.qualcomm.location.xml|78b2c4d3f4d053f7d7b3e27a60a8d9e65ac583c3
-etc/permissions/izat.xt.srv.xml
-framework/com.qti.location.sdk.jar|cb25606f1b8091b3fb2d134f3f1a4d8b24c94bb8
-framework/izat.xt.srv.jar|dd43374a25e1318551de3dae2f7bbb418f2f0f48
-lib64/liblocationservice_jni.so|f56e423e9df158f2e0f1b0577b7aa70a6bd0d373
-lib64/libxt_native.so|4f1063ec145b241d74b2178e2aadafa5c9b386b2
-lib64/vendor.qti.gnss@1.0.so|4ebe07dd1dcf1338f0ae4c9a1de1fc347bf052f6
-lib64/vendor.qti.gnss@1.1.so|2131b33d4a433e5eb096750e2e61eb65214e85e7
-lib64/vendor.qti.gnss@1.2.so|dd800aa858029881b4141fc95cf8171a19ae15fb
-lib64/vendor.qti.gnss@2.0.so|1df057b126220680ebf78509bb3ef181971a85e7
-lib64/vendor.qti.gnss@2.1.so|9744667ae015a5668782e6be6975487ea0e5226d
--priv-app/com.qualcomm.location/com.qualcomm.location.apk|dfa98d940a43f71b9aaa42ad7df176f0f3168403
 vendor/bin/hw/vendor.qti.gnss@1.0-service|b6c40deedad7c32af413cb70ab045961b7bbc53d
 vendor/bin/loc_launcher|4698b17ca2ee3abdf2ecb338ca9c20d7c03e31bb
 vendor/bin/lowi-server|c1009bc54e975b80222bd882fc033d3acf1a6b7a
