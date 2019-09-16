@@ -148,8 +148,8 @@ TARGET_KERNEL_CLANG_COMPILE := true
 #TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-androidkernel-
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8937-common
-TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8937-common
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_msm8937-common
+TARGET_RECOVERY_DEVICE_MODULES := //$(COMMON_PATH):libinit_msm8937-common
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
