@@ -158,7 +158,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mmp.enable.3g2=true \
     ro.config.vc_call_vol_steps=7 \
     ro.config.media_vol_steps=20 \
-    media.settings.xml=/vendor/etc/media_profiles_V1_0.xml
+    media.settings.xml=/vendor/etc/media_profiles_V1_0.xml \
+    media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # NITZ
 PRODUCT_PROPERTY_OVERRIDES += \
