@@ -172,9 +172,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
-# Power
-TARGET_HAS_NO_WLAN_STATS := true
-
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
