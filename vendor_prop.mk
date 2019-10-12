@@ -54,8 +54,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.sap=true \
     ro.bluetooth.dun=true \
     ro.qualcomm.bluetooth.map=true \
-    persist.bt.enableAptXHD=true \
-    persist.bluetooth.bluetooth_audio_hal.disabled=true
+    persist.bt.enableAptXHD=true
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
