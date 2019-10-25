@@ -87,22 +87,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dpm.feature=0 \
     persist.sys.cnd.iwlan=1
 
-# Core CTRL
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.core_ctl_min_cpu=2 \
-    ro.vendor.qti.core_ctl_max_cpu=4
-
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=8 \
     dalvik.vm.dex2oat-threads=8 \
-    dalvik.vm.heapgrowthlimit=192m \
+    dalvik.vm.heapgrowthlimit=256m \
     dalvik.vm.heapmaxfree=8m \
     dalvik.vm.heapminfree=512k \
-    dalvik.vm.heapsize=384m \
+    dalvik.vm.heapsize=512m \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heaptargetutilization=0.75 \
-    dalvik.vm.image-dex2oat-threads=8
+    ro.sys.fw.dex2oat_thread_count=4 \
+    dalvik.vm.boot-dex2oat-threads=8 \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.image-dex2oat-threads=4
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -244,10 +242,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true
 
-# Trim properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
-
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.mtp=0x2e82 \
@@ -258,12 +252,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.bpt_adb=0x2ee6 \
     ro.usb.bpteth=0x2ee7 \
     ro.usb.bpteth_adb=0x2ee8
-
-# Vendor Extension
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=libqti-perfd-client.so \
-    ro.vendor.at_library=libqti-at.so \
-    ro.vendor.gt_library=libqti-gt.so
 
 # VNDK
 PRODUCT_PROPERTY_OVERRIDES += \
