@@ -432,9 +432,6 @@ vendor/lib64/libvpptestutils.so
 # Motorola Camera
 vendor/etc/permissions/com.motorola.cameraone.xml
 
-# Offline charging
-vendor/bin/charge_only_mode
-
 # Perf
 bin/perfservice|c53336586faa40f65a83221d4c8eedaed837399c
 etc/init/perfservice.rc|81b7d732069783873184c4f51710236ee6139e49
