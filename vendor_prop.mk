@@ -48,12 +48,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=1 \
-    persist.ts.rtmakeup=true \
-    persist.vendor.camera.tof.direct=1 \
     persist.vendor.camera.display.umax=1920x1080 \
-    persist.vendor.camera.display.lmax=1280x720 \
-    persist.vendor.camera.HAL3.enabled=1 \
-    persist.vendor.qti.telephony.vt_cam_interface=1
+    persist.vendor.camera.display.lmax=1280x720
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -179,19 +175,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true \
     telephony.lteOnCdmaDevice=1 \
     ro.build.vendorprefix=/vendor
-
-#,Sensors
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.sar_sensor=1 \
-    ro.hardware.sensors=hannah \
-    ro.mot.sensors.glance_approach=false \
-    ro.vendor.sensors.pmd=false \
-    ro.vendor.sensors.rmd=false \
-    ro.vendor.sdk.sensors.gestures=false \
-    ro.vendor.sensors.facing=false \
-    ro.vendor.sensors.scrn_ortn=false \
-    ro.vendor.sensors.cmc=false \
-    ro.vendor.sensors.pedometer=false
 
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \

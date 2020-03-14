@@ -7,9 +7,6 @@
 
 set -e
 
-DEVICE=hannah
-VENDOR=motorola
-
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
@@ -46,24 +43,24 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-# Load wrapped shim
-function blob_fixup() {
-    case "${1}" in
-
-    lib/libwfdmmsrc.so)
-         sed -i "s|libtinyalsa.so|libwfdtalsa.so|g" "${2}"
-        ;;
-
-    vendor/lib64/libmdmcutback.so)
-         sed -i "s|libqsap_sdk.so|libqsapshim.so|g" "${2}"
-        ;;
-    esac
-}
-
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
+# Initialize the helper for common device
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
+
+if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
+    # Reinitialize the helper for device
+    source "${MY_DIR}/../${DEVICE}/extract-files.sh"
+    setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
+
+    extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" \
+            "${KANG}" --section "${SECTION}"
+fi
+
+COMMON_BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE_COMMON}/proprietary"
+
+sed -i "s|libtinyalsa.so|libwfdtalsa.so|g" "${COMMON_BLOB_ROOT}/lib/libwfdmmsrc.so"
+sed -i "s|libqsap_sdk.so|libqsapshim.so|g" "${COMMON_BLOB_ROOT}/vendor/lib64/libmdmcutback.so"
 
 "${MY_DIR}/setup-makefiles.sh"

@@ -21,7 +21,41 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
-#define BTM_DEF_LOCAL_NAME   "moto e5 plus"
+
+#include <cutils/properties.h>
+#include <string.h>
+
+static inline const char* BtmGetDefaultName()
+{
+    char product_device[PROPERTY_VALUE_MAX];
+    property_get("ro.product.device", product_device, "");
+
+    if (strstr(product_device, "aljeter"))
+        return "moto g6 play";
+    if (strstr(product_device, "cedric"))
+        return "moto g5";
+    if (strstr(product_device, "hannah"))
+        return "moto e5 plus";
+    if (strstr(product_device, "james"))
+        return "moto e5 play";
+    if (strstr(product_device, "jeter"))
+        return "moto g6 play";
+    if (strstr(product_device, "montana"))
+        return "moto g5s";
+    if (strstr(product_device, "nora"))
+        return "moto e5";
+    if (strstr(product_device, "owens"))
+        return "moto e4 plus";
+    if (strstr(product_device, "perry"))
+        return "moto e4";
+    if (strstr(product_device, "rhannah"))
+        return "moto e5 plus";
+
+    // Fallback to moto
+    return "moto";
+}
+
+#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    16

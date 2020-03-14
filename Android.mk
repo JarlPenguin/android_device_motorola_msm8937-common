@@ -15,11 +15,9 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),hannah)
-
+ifneq ($(filter ahannah aljeter cedric hannah james jeter montana montana_retcn nora owens perry pettyl rhannah,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
-
-include $(CLEAR_VARS)
+endif
 
 LOCAL_MODULE := wifi_symlinks
 LOCAL_MODULE_TAGS := optional
@@ -122,19 +120,33 @@ $(FIRMWARE_DHSECAPP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_DHSECAPP_SYMLINKS)
 
-FIRMWARE_FINGERPRINT_IMAGES := \
+FIRMWARE_EGTZFINGERPRINT_IMAGES := \
     egtzappfingerprint.b00 egtzappfingerprint.b01 egtzappfingerprint.b02 \
     egtzappfingerprint.b03 egtzappfingerprint.b04 egtzappfingerprint.b05 \
     egtzappfingerprint.b06 egtzappfingerprint.mdt
 
-FIRMWARE_FINGERPRINT_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(FIRMWARE_FINGERPRINT_IMAGES)))
-$(FIRMWARE_FINGERPRINT_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Fingerprint Firmware link: $@"
+FIRMWARE_EGTZFINGERPRINT_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(EGTZFIRMWARE_FINGERPRINT_IMAGES)))
+$(FIRMWARE_EGTZFINGERPRINT_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "EGTZ Fingerprint Firmware link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_FINGERPRINT_SYMLINKS)
+ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_EGTZFINGERPRINT_SYMLINKS)
+
+FIRMWARE_FPCTZFINGERPRINT_IMAGES := \
+    fpctzappfingerprint.b00 fpctzappfingerprint.b01 fpctzappfingerprint.b02 \
+    fpctzappfingerprint.b03 fpctzappfingerprint.b04 fpctzappfingerprint.b05 \
+    fpctzappfingerprint.b06 fpctzappfingerprint.mdt
+
+FIRMWARE_FPCTZFINGERPRINT_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(FIRMWARE_FPCTZFINGERPRINT_IMAGES)))
+$(FIRMWARE_FPCTZFINGERPRINT_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "FPCTZ Fingerprint Firmware link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /firmware/image/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_FPCTZFINGERPRINT_SYMLINKS)
 
 GPTEST_IMAGES := \
     gptest.b00 gptest.b01 gptest.b02 gptest.b03 gptest.b04 gptest.b05 gptest.b06 gptest.mdt
