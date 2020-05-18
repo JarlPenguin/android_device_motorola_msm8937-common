@@ -90,9 +90,6 @@ BOARD_NO_CHARGER_LED := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
-# Encryption
-TARGET_HW_DISK_ENCRYPTION := true
-
 # FM
 BOARD_HAVE_QCOM_FM := true
 
