@@ -69,6 +69,15 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libcutils_shim.so" "${LIBCUTILS_SHIM}"
             done
             ;;
+
+        vendor/lib64/libril-qc-hal-qmi.so)
+            "${PATCHELF}" --replace-needed "android.hardware.radio.config@1.1.so" "android.hardware.radio.config@1.1_shim.so" "${2}"
+            ;;
+
+        vendor/lib64/android.hardware.radio.config@1.1_shim.so)
+            "${PATCHELF}" --set-soname "android.hardware.radio.config@1.1_shim.so" "${2}"
+            sed -i -e 's|android.hardware.radio.config@1.1::IRadioConfig\x00|android.hardware.radio.config@1.0::IRadioConfig\x00|g' "${2}"
+            ;;
     esac
 }
 

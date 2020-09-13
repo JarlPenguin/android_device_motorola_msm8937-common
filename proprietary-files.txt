@@ -500,11 +500,14 @@ vendor/bin/netmgrd|8752fb8cb74bd402a13ff291b7d2074415350984
 vendor/bin/qrtr-ns|c9b51efaa6359bafa6a838f3c47de556dfae5a3f
 vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
 vendor/lib64/libqcrilFramework.so|3d8f25d13533f6fa45a36b23feb250291b663370
-vendor/lib64/libril-qc-hal-qmi.so|9f58de2abe6a3d67a341692c5870929a66f0b8b2
+vendor/lib64/libril-qc-hal-qmi.so|b417ac554602575b052896a9b220e64247154212
 vendor/lib64/qcrild_librilutils.so|c23470619690a34f7442fb6b26345de5dc4de880
 vendor/lib64/qtibus.so|ee4c36f06be6a4175fef97610bf1c1580a1c893f
 vendor/lib64/qtimutex.so|e0963a87e9fe282bfd57eed8ad179b9e944643bd
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|f591de5c6556b24af53aa4004a36fd818351510a
+
+# RIL - from FP3 - 8901.3.A.0033.20200815
+system/lib64/vndk-29/android.hardware.radio.config@1.1.so:vendor/lib64/android.hardware.radio.config@1.1_shim.so|a1dae2cff03889e2e9fe169f7212ff0c345bd079
 
 # Sensors
 vendor/bin/capsense_reset
