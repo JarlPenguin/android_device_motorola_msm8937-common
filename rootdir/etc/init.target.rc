@@ -117,10 +117,29 @@ on boot
     chown system system /sys/kernel/hbtp/display_pwr
 
 service vendor.ppd /vendor/bin/mm-pp-dpps
-    class hal
+    class late_start
+    disabled
     user system
-    group system graphics
     socket pps stream 0660 system system
+    group system graphics
+
+on property:init.svc.surfaceflinger=stopped
+    stop vendor.ppd
+
+on property:init.svc.surfaceflinger=running
+    start vendor.ppd
+
+on property:init.svc.surfaceflinger=restarting
+    stop vendor.ppd
+
+on property:init.svc.zygote=stopped
+    stop vendor.ppd
+
+on property:init.svc.zygote=running
+    start vendor.ppd
+
+on property:init.svc.zygote=restarting
+    stop vendor.ppd
 
 on property:init.svc.surfaceflinger=restarting
     restart vendor.hwcomposer-2-1
