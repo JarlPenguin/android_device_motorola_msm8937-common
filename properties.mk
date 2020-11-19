@@ -43,6 +43,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=pronto
 
+# Boot
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.vendor.shutdown.waittime=500
+
 # BPF
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.ebpf.supported=true
