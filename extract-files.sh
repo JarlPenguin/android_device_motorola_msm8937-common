@@ -23,6 +23,10 @@ source "${HELPER}"
 
 function blob_fixup() {
     case "${1}" in
+        system/lib/libwfdnative.so | system/lib64/libwfdnative.so)
+            "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
+            ;;
+
         system_ext/etc/permissions/qcrilhook.xml)
             sed -i "s|/product/framework/|/system_ext/framework/|g" "${2}"
             ;;
