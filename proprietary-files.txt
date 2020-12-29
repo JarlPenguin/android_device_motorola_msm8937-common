@@ -355,27 +355,39 @@ vendor/lib64/libgcs.so|9018cdd801432804794c1371873d4f50942d1027
 vendor/lib64/liblistenjni.so|eaef51960b85d8d6904d268f96e56508fe9aa0c6
 vendor/lib64/liblistensoundmodel2.so|dfbfb43e255a474d1cf0cecb14b10ad63ac126c2
 
-# Media - from D1C - PKQ1.181105.001
-vendor/lib/libAlacSwDec.so|339a78c17a0b7032e678a38deb523a0d403fdb41
-vendor/lib/libApeSwDec.so|013abb41d28f28bac9904562049c4460add11a47
-vendor/lib/libFlacSwDec.so|ff125da726e44764cf1f249f9214022f1c723ce6
-vendor/lib/libOmxAacDec.so|812fb8b8f5a3af2c5844c61d19dfc252b367b020
-vendor/lib/libOmxAlacDec.so|b107909a3e897514a263bceae47592bb91b66ca9
-vendor/lib/libOmxAlacDecSw.so|03f59d661995d701c8e8f196a7764ac9d08dfdb0
-vendor/lib/libOmxAmrDec.so|dac4e2d8904469163c414ec98c1f4467e2c99ee0
-vendor/lib/libOmxAmrwbplusDec.so|a65cc7b188305a17e3518d29ae8c226d203c7e6e
-vendor/lib/libOmxApeDec.so|a8a3dae550fedae9ee46673fe89608ac733caeb2
-vendor/lib/libOmxApeDecSw.so|7c8e2c3fd64ab57a5569035864cd32e6f9c756ad
-vendor/lib/libOmxEvrcDec.so|e12ba037b1186b4501d27d9faa27343419f59c75
-vendor/lib/libOmxQcelp13Dec.so|e498d31e1bec45c27b4944aa38b29eb7dad5b758
-vendor/lib/libOmxVpp.so|3f9f511b8697789715070935639f4534e91126f3
-vendor/lib/libOmxWmaDec.so|d6e4ba56e73be8c67aed216aafb8d2771443524f
-vendor/lib/libvpplibrary.so|d7dad7b2278905892f8d67df4f51c455567d7c64
-vendor/lib/libvqzip.so|0b906db131e99cd5460b8a72d05e86721243de95
+# Media - from dpl_sprout - RKQ1.200928.002
+system/lib/libFileMux.so|4e05cd5e9913311ad17543d204adcd6d60cc8754
+system/lib/libOmxMux.so|033f86f26c34c4ec715ee65b1a2cfbef467a1e61
+system_ext/lib/extractors/libmmparserextractor.so|1902f82487e88250aa53e4f7c82c785941488ca7
+system_ext/lib/libmmosal.so|8c7f0a071f84ec2ac9522bf448cb902a3ece2405
+system_ext/lib/libmmparser_lite.so|f7ed21ea0de0de02741854d78518c977ef5763f5
+system_ext/lib64/libmmosal.so|ef19a38be8283c87eabe96f74bc8a71881ab1f0a
+vendor/lib/libAlacSwDec.so|9404a482dd25bb77cdfec7b1ddef8a68d6946fec
+vendor/lib/libApeSwDec.so|cecc7a897711b96321128210efbfa03ecbd02714
+vendor/lib/libFlacSwDec.so|7d661ac115de794bc6f6f7d20d4f93735b698c52
+vendor/lib/libmmosal.so|e23d6d1b2a035c08ffd7ac72d5241ebff37f0d14
+vendor/lib/libOmxVpp.so|825146c3065d4f08ac54de62c43d4be31debca31
+vendor/lib/libvpplibrary.so|de25e347aeb813bfe2d091cbd61cc70219242af3
+vendor/lib/libOmxAacDec.so|7c7ffe4f9ae9881b66ecde16bae36e9fb9a26676
+vendor/lib/libOmxAlacDec.so|268751eecd1d5ba42ae18e6a7c02377ae6ebd850
+vendor/lib/libOmxAlacDecSw.so|59055e1c00ed82f7c310dcf78d4104b9f803d12e
+vendor/lib/libOmxAmrDec.so|7779dfa49f65933afdd6b1efbe719b6afc8c9ccd
+vendor/lib/libOmxAmrwbplusDec.so|e253c2b068f0a3295796f9912d9906cc29b336d7
+vendor/lib/libOmxApeDec.so|052e5b93b034a8bb109e4b0ffccd6aa06c2b2bba
+vendor/lib/libOmxApeDecSw.so|076e4092433cf2422c71594c7f4a418f32408f56
+vendor/lib/libOmxDsdDec.so|b8697801e414e51ea488505bb4b94567e882585d
+vendor/lib/libOmxEvrcDec.so|99202c934d1fdd1e428527019b7dc92dde40edc6
+vendor/lib/libOmxG711Dec.so|9e74e8d60466708eabc155910d14f597041631c3
+vendor/lib/libOmxQcelp13Dec.so|4424762bcf639284112395b4c9d63cb58c799638
+vendor/lib/libOmxVideoDSMode.so|71c4f23de93e91931c077ed511301185152422da
+vendor/lib/libOmxWmaDec.so|c47e74a73afa486429c009f338779cd78566f77c
+vendor/lib/libvqzip.so|f85628ea634df1c31d69380d960ad7ea3396e7b2
+vendor/lib64/libmmosal.so|e9fdb48163e92b089cea0c397723a8416436c272
 
-# Media - from D1C - PKQ1.181105.001
--vendor/lib/libMpeg4SwEncoder.so|ac4aaba9259a4868ad29a96c07a5814e1f569d47
--vendor/lib/libOmxSwVencMpeg4.so|ed4200c66e3a185dd13952b3ccf6cc2524ded519
+# Media OMX - from X00RD - QKQ1.191002.002-17.07.2003.405-20200330
+-vendor/lib/libMpeg4SwEncoder.so|4724c498d1949dbcd19d73b8ef7279d49f09b0d9
+-vendor/lib/libOmxSwVdec.so|30a6eeebd47fbe17aecc92af7fd3dee8848e8bc1
+-vendor/lib/libOmxSwVencMpeg4.so|eda2bef01841815a7a165ea2280c88cf0e080045
 
 # Perf - from dpl_sprout - QKQ1.191008.001
 vendor/etc/perf/commonresourceconfigs.xml|1f8b94ca8dcdc0afd66d9e9b0fcef15fdb67f5d0
