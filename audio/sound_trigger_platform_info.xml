@@ -29,7 +29,7 @@
     <param version="0x0101" /> <!-- this must be the first param -->
 
     <common_config>
-        <param implementer_version="0x100" />
+        <param implementer_version="0x0100" />
         <param max_cpe_sessions="1" />
         <param max_ape_sessions="5" />
         <param enable_failure_detection="false" />
@@ -72,6 +72,7 @@
         <param sample_rate="16000" />
         <param bit_width="16" />
         <param channel_count="1"/>
+
         <!-- adm_cfg_profile should match with the one defined under adm_config -->
         <!-- Set it to NONE if LSM directly connects to AFE -->
         <param adm_cfg_profile="NONE" />
@@ -139,3 +140,4 @@
     </adm_config>
 
 </sound_trigger_platform_info>
+

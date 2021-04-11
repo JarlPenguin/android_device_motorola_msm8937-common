@@ -1,56 +1,46 @@
 ### All blobs from this list, unless pinned and noted as otherwise,
 ##  are from deen_sprout 10 QPKS30.54-22-12
 
-# ADSP
-vendor/bin/adsprpcd
-vendor/lib/libadspd.so
-vendor/lib/libadsprpc.so
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib64/libadspd.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
+# ADSP - from dpl_sprout - RKQ1.200928.002
+vendor/bin/adsprpcd|b736b00857d64e74a3b9be887215124d186f95d5
+vendor/lib/libadsprpc.so|5d784c9f1ff7845b04ecba1c2592aad29ff53f7b
+vendor/lib/libadsp_default_listener.so|7bed67d442ce79de62b9a6ba398df321ef6b7397
+vendor/lib/libfastcvadsp_stub.so|70772d0bc39617430e27a21f89fccd93cc757185
+vendor/lib/libfastcvopt.so|151040b1e9a4d78e4a66654a2f09af6ffd6e679d
+vendor/lib/libmdsprpc.so|7ece3d6d2f987a6042d581f5eab7f6271e712965
+vendor/lib/libsdsprpc.so|eb4981427c163bd6cd1eed6c2dbe364da3c1a883
+vendor/lib64/libadsprpc.so|e1fe0a21169d116f6996070a097b530f758ceabd
+vendor/lib64/libadsp_default_listener.so|0324e797f6fdd15680df7fdacc51f713e40b9806
+vendor/lib64/libfastcvadsp_stub.so|f4535845bc4f40e3cb8e79d090e5ed87b0acfbb0
+vendor/lib64/libfastcvopt.so|03da360f22884667c9110ff2384f8dca35e32671
+vendor/lib64/libmdsprpc.so|c0b5cf2e733829cd7d8ba0c3133cb115511b5dc5
+vendor/lib64/libsdsprpc.so|2a93a07babf8a604fefa26603c3aca03df4153aa
 
-# ADSP modules
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
-vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_stats.so
-vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so
-vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
+# ADSP modules - from dpl_sprout - RKQ1.200928.002
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
+vendor/lib/rfsa/adsp/libdspCV_skel.so|628985174b0088bed21c866d7984d23855e5e150
+vendor/lib/rfsa/adsp/libfastcvadsp.so|9818625bfa018f517e32a8f4a1e7fb4b255e5049
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb4f7
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|944169db3ac67056b92ef4f850f69346958370b5
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
 
-# Audio
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libaudcal.so
-vendor/lib/libaudioalsa.so
-vendor/lib/libaudioparsers.so
-vendor/lib/libqtigef.so
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbloader.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
-vendor/lib64/libaudioalsa.so
-vendor/lib64/libaudioparsers.so
-vendor/lib64/libqtigef.so
+# Audio - from dpl_sprout - RKQ1.200928.002
+vendor/lib/libacdb-fts.so|6debcd8ddc74b8b911cfcdd8bba542c0504c1c1f
+vendor/lib/libacdbloader.so|7a839b5159fa1e2992be99affe661b2d3872c0d9
+vendor/lib/libacdbrtac.so|f0f79c77a136aeb6e50c129d0c8142415ec303fd
+vendor/lib/libadiertac.so|6ec67178c38d3c967004831629f47a4eb326c715
+vendor/lib/libaudcal.so|d0e037b471a61737b203ed5b52f7665101c972e4
+vendor/lib/libaudioalsa.so|58feb2c5cbc4ac6e23ef4896c87785bed8db3c80
+-vendor/lib/libaudioparsers.so|a39f1f6e789547f63b7e2369d73b29876763d68d
+vendor/lib/libqtigef.so|fbb307c0da385bf09cbdef714e8fc1ecfc7ba6fd
+vendor/lib64/libacdb-fts.so|3b14006eb555ac6c177d674a34e3207c506389c0
+vendor/lib64/libacdbloader.so|67936cfbb726484df0aff45aef65f1572269fa3c
+vendor/lib64/libacdbrtac.so|bc3994cd164ca6d5464beb74f76ae1a01d6cc139
+vendor/lib64/libadiertac.so|dd97686638c6dbbe22ad4416324beac4d8ab8926
+vendor/lib64/libaudcal.so|ad3475cb573a50ecdf9904903ca816dae24e5341
+vendor/lib64/libaudioalsa.so|534d4dc07fecea0611273c745721b1ed2015a3a3
+-vendor/lib64/libaudioparsers.so|1463c5ee0f2f040835386d9ccb4a4b010c5bdf58
+vendor/lib64/libqtigef.so|b3f1cb946809bfe20a4afced73b4fd24c5591421
 
 # Bluetooth - from deen_sprout - PPKS29.68-16-36-13
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|063da7375148fdd56930a54ea8d3e276725e62df
@@ -144,6 +134,12 @@ vendor/lib64/librpmb.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
+
+# DSP - from dpl_sprout - RKQ1.200928.002
+vendor/bin/dspservice|c7809e32581d5c6efac65a3a7689f43526c17bb8
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|41bdb4d9eda88cebfbc3bc6db64ff875416dbf5a
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|5f30d9c5fff738e6194a36a5b93372fa32ec0471
 
 # DRM - Qualcomm Trusted Execution Enviornment
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
@@ -327,23 +323,15 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 # Keymaster
 vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8937.so|d8303e587ac8cd79205ddf5e0627edefbc281561
 
-# Listen - from X00RD - QKQ1.191002.002-17.07.2003.405-20200330
-vendor/lib/hw/sound_trigger.primary.msm8937.so|305f7f8ba1ab05c464ef669cfaa6e5bd3432f73b
-vendor/lib/libadpcmdec.so|be5fdf08a08b635816381e61b6bbf2874c62f613
-vendor/lib/libgcs-calwrapper.so|c1e42b5db0be908052f19de3c3bfc5cee6819363
-vendor/lib/libgcs-ipc.so|33104e481daf5cf97720a6da812b09ed30aacaa1
-vendor/lib/libgcs-osal.so|5d0d7939c429a558ecb539e67bc379b417980444
-vendor/lib/libgcs.so|5f65daa6f37c21bc4dc2c7cc42caaf7d338b70e3
-vendor/lib/liblistenjni.so|131a949c9e0d0baf31e179645b7edd86876b5761
-vendor/lib/liblistensoundmodel2.so|5f533ea9a7ea488dfc9f028b9a0a478e54255dd7
-vendor/lib/libsmwrapper.so|1ab31b5378265784145defa47d50435029cf5f57
-vendor/lib64/hw/sound_trigger.primary.msm8937.so|1a55a7258b7a9f4d9521f83298baa59a9dbb23f2
-vendor/lib64/libgcs-calwrapper.so|f8ea3485465c2bde8db75e79dc668598f2984214
-vendor/lib64/libgcs-ipc.so|008d8690fe30116526a91a90fde909f9f1f8a916
-vendor/lib64/libgcs-osal.so|c69df09e6521df8ae922893ec758014e978a52f7
-vendor/lib64/libgcs.so|9018cdd801432804794c1371873d4f50942d1027
-vendor/lib64/liblistenjni.so|eaef51960b85d8d6904d268f96e56508fe9aa0c6
-vendor/lib64/liblistensoundmodel2.so|dfbfb43e255a474d1cf0cecb14b10ad63ac126c2
+# Listen - from dpl_sprout - RKQ1.200928.002
+vendor/lib/hw/sound_trigger.primary.msm8937.so|8dc84d7989a87e8bd22074ac525423e66f06781e
+vendor/lib/libadpcmdec.so|7a38d6b28b27cf663681ad077614a03164418f91
+vendor/lib/libgcs-calwrapper.so|0445944d0223253e6820764eba649c20a4c30ffc
+vendor/lib/libgcs-ipc.so|f1da3f18f403976dd2f579874a9706e351119a75
+vendor/lib/libgcs-osal.so|2fc9a8ac335c37b8cefc8dce0abca1a478f96f65
+vendor/lib/libgcs.so|322172fcf7625c4e1e1bc501aac9e9a31fad7625
+vendor/lib/liblistensoundmodel2.so|f3a86073935c191d1baf63883d24a1c42534d29d
+vendor/lib/libsmwrapper.so|f0ee761c02c888e77d947bb87d162d9379bc1530
 
 # Media - from dpl_sprout - RKQ1.200928.002
 vendor/lib/libAlacSwDec.so|9404a482dd25bb77cdfec7b1ddef8a68d6946fec
