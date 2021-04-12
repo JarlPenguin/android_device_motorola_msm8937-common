@@ -1,3 +1,14 @@
+cc_library_shared {
+    name: "libaudiopolicy_shim",
+    srcs: ["AudioTrack.cpp"],
+    shared_libs: ["libaudioclient"],
+    header_libs: [
+        "libaudioclient_headers",
+        "libmedia_headers",
+        "libmediametrics_headers",
+    ],
+}
+
 cc_library {
     name: "libmemset_shim",
     vendor: true,

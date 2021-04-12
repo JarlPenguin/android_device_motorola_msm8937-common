@@ -349,6 +349,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libaudiopolicy_shim \
     libcutils_shim \
     libmemset_shim \
     libqsapshim
