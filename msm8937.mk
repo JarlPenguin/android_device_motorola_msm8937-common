@@ -40,7 +40,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@7.0-impl:32 \
     android.hardware.audio.effect@7.0-impl:32 \
-    android.hardware.bluetooth.audio@2.0-impl:32 \
+    android.hardware.bluetooth.audio@2.1-impl:32 \
     android.hardware.soundtrigger@2.2-impl:32
 
 PRODUCT_COPY_FILES += \
