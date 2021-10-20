@@ -56,7 +56,7 @@ system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Camera
-vendor/lib/libmot_gpu_mapper.so|9f4d96542314976a8384f686a2a4c49d321999fe
+vendor/lib/libmot_gpu_mapper.so|39c1ca80b184a1d5d8f445cf6a4607772263510a
 
 # Camera firmware
 vendor/firmware/cpp_firmware_v1_10_0.fw
@@ -263,8 +263,8 @@ vendor/firmware/a530_pfp.fw|35b72dce880191ff087af2524205afce40ea8c97
 vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
 
 # IMS
-product/lib64/lib-imscamera.so:system_ext/lib64/lib-imscamera.so
-product/lib64/lib-imsvideocodec.so:system_ext/lib64/lib-imsvideocodec.so
+product/lib64/lib-imscamera.so:system_ext/lib64/lib-imscamera.so|801874f74634f44954cad54f1b1c456fd8dd86c7
+product/lib64/lib-imsvideocodec.so:system_ext/lib64/lib-imsvideocodec.so|ed34f14533290fd3c609569459799fe53292f4d9
 product/lib64/lib-imsvt.so:system_ext/lib64/lib-imsvt.so
 product/lib64/lib-imsvtextutils.so:system_ext/lib64/lib-imsvtextutils.so
 product/lib64/lib-imsvtutils.so:system_ext/lib64/lib-imsvtutils.so
