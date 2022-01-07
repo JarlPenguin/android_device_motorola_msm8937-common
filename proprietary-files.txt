@@ -497,8 +497,6 @@ vendor/bin/netmgrd|8752fb8cb74bd402a13ff291b7d2074415350984
 
 # Sensors
 vendor/bin/capsense_reset
-vendor/lib/hw/activity_recognition.msm8953.so:vendor/lib/hw/activity_recognition.msm8937.so|b3d9be075b7d7e896e0086e90baacc602445258b
-vendor/lib64/hw/activity_recognition.msm8953.so:vendor/lib64/hw/activity_recognition.msm8937.so|24e17b4c9f237b51e89fae26adc7cc573493514d
 
 # Thermal - from dpl_sprout - RKQ1.200928.002
 vendor/bin/thermal-engine|bacf88c801ba037e1e1d2671937404184eb8964b
