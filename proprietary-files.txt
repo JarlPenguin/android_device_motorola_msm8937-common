@@ -120,6 +120,10 @@ vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
+# CNE - from daisy - QKQ1.191002.002 V11.0.21.0.QDLMIXM
+-vendor/app/IWlanService/IWlanService.apk|12da3d82b6cc062d2af29a0b5f43fc8acf9adbb2
+vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|f338ec0fe9c5f49ecd94e1835b6a16b020afb66c
+
 # DRM and SEE - from dpl_sprout - RKQ1.200928.002
 vendor/bin/qseecomd|04e6aea39b5a357836310b4e3d5cd757a786ec4e
 vendor/lib/libQSEEComAPI.so|e30192367fb5f9ccd9f281d9e6e38fbaddfdd77b
@@ -491,7 +495,16 @@ vendor/radio/qcril_database/upgrade/6_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql
 
 # RIL - from daisy - QKQ1.191002.002 V11.0.21.0.QDLMIXM
+vendor/bin/hw/qcrild|c0db5589a45874c31c0bb7e8a7151511505c1e04
 vendor/bin/netmgrd|8752fb8cb74bd402a13ff291b7d2074415350984
+vendor/bin/qrtr-ns|c9b51efaa6359bafa6a838f3c47de556dfae5a3f
+vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
+vendor/lib64/libqcrilFramework.so|3d8f25d13533f6fa45a36b23feb250291b663370
+vendor/lib64/libril-qc-hal-qmi.so|9f58de2abe6a3d67a341692c5870929a66f0b8b2
+vendor/lib64/qcrild_librilutils.so|c23470619690a34f7442fb6b26345de5dc4de880
+vendor/lib64/qtibus.so|ee4c36f06be6a4175fef97610bf1c1580a1c893f
+vendor/lib64/qtimutex.so|e0963a87e9fe282bfd57eed8ad179b9e944643bd
+vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|f591de5c6556b24af53aa4004a36fd818351510a
 
 # Sensors
 vendor/bin/capsense_reset

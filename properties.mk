@@ -164,6 +164,7 @@ PRODUCT_ODM_PROPERTIES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.data.iwlan.enable=true \
     persist.vendor.ims.dropset_feature=0 \
     persist.vendor.ims.disableADBLogs=0 \
     persist.vendor.ims.disableDebugDataPathLogs=0 \
@@ -193,9 +194,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.relay_oprt_change=1 \
     persist.vendor.radio.sar_sensor=1 \
     persist.vendor.radio.sw_mbn_update=1 \
-    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-    ro.build.vendorprefix=/vendor \
-    ro.telephony.iwlan_operation_mode=legacy
+    ro.build.vendorprefix=/vendor
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ril.subscription.types=NV,RUIM \

@@ -143,6 +143,9 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_motorola
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor

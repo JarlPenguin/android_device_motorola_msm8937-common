@@ -151,6 +151,9 @@ on boot
     # default country code
     setprop ro.boot.wificountrycode 00
 
+    start vendor.qcrild
+    start vendor.qcrild2
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
@@ -321,6 +324,12 @@ on property:persist.vendor.radio.atfwd.start=false
 on property:vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
+service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
+    class core
+    user oem_2906
+    group oem_2906
+    capabilities NET_BIND_SERVICE
+
 service vendor.irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
@@ -384,12 +393,6 @@ service vendor.atfwd /vendor/bin/ATFWD-daemon
 on property:ro.data.large_tcp_window_size=true
     # Adjust socket buffer to enlarge TCP receive window for high bandwidth (e.g. DO-RevB)
     write /proc/sys/net/ipv4/tcp_adv_win_scale  2
-
-service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
-    class main
-    user radio
-    group radio cache inet misc audio log readproc wakelock
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
     class core
