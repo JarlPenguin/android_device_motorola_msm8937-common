@@ -72,7 +72,7 @@ vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # CNE
--vendor/app/CneApp/CneApp.apk
+vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
@@ -160,7 +160,7 @@ vendor/bin/xtwifi-client|8c4c21cd92611b0a1ff621a2da159c778bd1d7d7
 vendor/bin/xtwifi-inet-agent|f805841e5c8ca3b0af620486a64a37148daa0980
 vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
 vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|aba58066080571e9a0bf4424d5c072111c638822
 vendor/lib64/libaoa.so|2773cc73bda86a0ec6f1265299686a00dfb5db41
 vendor/lib64/libasn1cper.so|13b075d2b057662ad67c654069b621b20a803e1c
@@ -315,7 +315,7 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
 # IMS - from daisy - QKQ1.191002.002 V11.0.21.0.QDLMIXM
--product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk|9c4ca91e0ec7a567d22251d7ca0640abf13fdd7b
+product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk|9c4ca91e0ec7a567d22251d7ca0640abf13fdd7b
 
 # Keymaster
 vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8937.so|d8303e587ac8cd79205ddf5e0627edefbc281561
@@ -422,13 +422,13 @@ vendor/lib64/libqmimotext.so
 vendor/lib64/libqmiservices.so
 
 # RIL
--product/app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
--product/app/datastatusnotification/datastatusnotification.apk:system_ext/app/datastatusnotification/datastatusnotification.apk
+product/app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+product/app/datastatusnotification/datastatusnotification.apk:system_ext/app/datastatusnotification/datastatusnotification.apk
 product/etc/permissions/qcrilhook.xml:system_ext/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephonyservice.xml:system_ext/etc/permissions/telephonyservice.xml
 product/framework/QtiTelephonyServicelibrary.jar:system_ext/framework/QtiTelephonyServicelibrary.jar
 product/framework/qcrilhook.jar:system_ext/framework/qcrilhook.jar
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/ATFWD-daemon
 vendor/bin/ipacm-diag
 vendor/bin/port-bridge
@@ -502,7 +502,7 @@ vendor/lib/libthermalclient.so|61becb3664bb8b445cec53c2f173af82ed1ad7ae
 vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
 
 # Time services - from dpl_sprout - RKQ1.200928.002
--vendor/app/TimeService/TimeService.apk|7c61c4257a39c7aec7992a134a08dcd46a953c96
+vendor/app/TimeService/TimeService.apk|7c61c4257a39c7aec7992a134a08dcd46a953c96
 vendor/bin/time_daemon|e62d164b8c8b30743837896d4c5e8bca39b364e6
 vendor/etc/init/init.time_daemon.rc|a89ed147a681b30ecf5e78dd2df6b18e1bf7a18b
 vendor/lib64/libtime_genoff.so|3f57de1aeb7aa113a0a579cebed85ab4405b9b49
@@ -515,7 +515,7 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|960561ba01e28777e099294fb0a9a74
 # Widevine - from dpl_sprout - RKQ1.200928.002
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|92e4797cb000e86ba74fba9da2c014d7ec8fa1a6
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
 vendor/lib64/libcpion.so|388b27050e97bdfdee0d98428f223611b761f252
 vendor/lib64/libhdcpsrm.so|85c4b0f714b3946d94d32811d4c85ad2dd244d65
 vendor/lib64/liboemcrypto.so|0ed2cd7b6d34d2043956a7643b22c0fc212282b1
@@ -529,7 +529,7 @@ system/bin/wfdservice|96a583c0efeaf90352b26c20c904ee156238b90f
 system/etc/init/wfdservice.rc|311bfdd1675e56499662f39455536b75b78477bb
 system/etc/wfdconfig.xml|5cad25c10860c49716429ec55123c72a5787d879
 system/etc/wfdconfigsink.xml|5b4a96f251fd83c2eee520d06bea2b5b159fcd36
--system/framework/WfdCommon.jar|0faa0fdf415b1ecdc92dfe6a52946a3248b7b02b
+system/framework/WfdCommon.jar|0faa0fdf415b1ecdc92dfe6a52946a3248b7b02b
 system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|aa89ab6f11d1d9f22862b8c4076d34172d6f0e8d
 system/lib/libFileMux.so|4e05cd5e9913311ad17543d204adcd6d60cc8754
 system/lib/libOmxMux.so|033f86f26c34c4ec715ee65b1a2cfbef467a1e61
@@ -556,7 +556,7 @@ system/lib64/libmmrtpdecoder.so|de3308c17bae74c0f725dddd9f971f664c0fe2f5
 system/lib64/libmmrtpencoder.so|4384149256e8c8b4608f28021abde3eadf80bde8
 system/lib64/libwfdclient.so|8317f658713772fa98053417d74de56ac36848ee
 system/lib64/libwfdnative.so|09ef72be67d356a0486c7c6b39bc3c1fc6517d90
--system/priv-app/WfdService/WfdService.apk|93ea62759720aacf6f9f794758be741cf9623191
+system/priv-app/WfdService/WfdService.apk|93ea62759720aacf6f9f794758be741cf9623191
 system_ext/lib/extractors/libmmparserextractor.so|1902f82487e88250aa53e4f7c82c785941488ca7
 system_ext/lib/libmmosal.so|8c7f0a071f84ec2ac9522bf448cb902a3ece2405
 system_ext/lib/libmmparser_lite.so|f7ed21ea0de0de02741854d78518c977ef5763f5
