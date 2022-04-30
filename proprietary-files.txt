@@ -215,7 +215,6 @@ vendor/lib/libllvm-glnext.so|5cef3ee6d93e081383a91a1808ada0218c9940d2
 vendor/lib/libllvm-qcom.so|e7a677fe0199f035cbc9c98eaae5a99244a36b63
 vendor/lib/libOpenCL.so|86a24e408c852cab331f48a4341dc42bddc0fe17
 vendor/lib/libpvr.so|5e7b1788636d49b2ea3d02a1138c72cbc3b4c7ca
-vendor/lib/librs_adreno.so|9a563f8a469187d6239ba72907271179d8b7d753
 vendor/lib/libVkLayer_q3dtools.so|f8c43e8addd1f53f55a3eb0916b8cb933afc83da
 vendor/lib64/egl/eglSubDriverAndroid.so|cd1cb25bfd16f15e0d7c6495493359838a1b6e96
 vendor/lib64/egl/libEGL_adreno.so|eb26e59665ec42a6889eea2ccf596b8f4e85c219
@@ -233,7 +232,6 @@ vendor/lib64/libllvm-glnext.so|cc14fa4f73fba802c3e3c098b485eaf66d842b45
 vendor/lib64/libllvm-qcom.so|912f120845a76deebf522ae871166ae3930fef51
 vendor/lib64/libOpenCL.so|eb7fbc2972a022b645e422422cc77d00b103532f
 vendor/lib64/libpvr.so|b9d38b4d340e66a1d89861ce552f0405ce9bfa11
-vendor/lib64/librs_adreno.so|c915361633f7d32f27ab627a0e4400e25a0a5c43
 vendor/lib64/libVkLayer_q3dtools.so|af2da97008f5967bf38878b82f3a0a206650636d
 
 # Graphics (HDR) - from dpl_sprout - RKQ1.200928.002
