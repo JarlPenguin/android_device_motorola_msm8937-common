@@ -156,7 +156,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_ENFORCE_QSSI := true
+TARGET_ENFORCES_QSSI := true
 
 # Recovery
 ifeq ($(PRODUCT_FULL_TREBLE_OVERRIDE), true)
