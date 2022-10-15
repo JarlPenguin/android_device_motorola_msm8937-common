@@ -24,9 +24,7 @@ source "${HELPER}"
 function blob_fixup() {
     case "${1}" in
         system/lib/libwfdmmsink.so)
-            for LIBAUDIOPOLICY_SHIM in $(grep -L "libaudiopolicy_shim.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libaudiopolicy_shim.so" "${LIBAUDIOPOLICY_SHIM}"
-            done
+            grep -q "libaudiopolicy_shim.so" "${2}" || "${PATCHELF}" --add-needed "libaudiopolicy_shim.so" "${2}"
             ;;
 
         system/lib/libwfdnative.so | system/lib64/libwfdnative.so)
@@ -42,16 +40,12 @@ function blob_fixup() {
             ;;
 
         system_ext/lib64/lib-imscamera.so | system_ext/lib64/lib-imsvideocodec.so)
-            for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
-            done
+            grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
 
         # memset shim
         vendor/bin/charge_only_mode)
-            for LIBMEMSET_SHIM in $(grep -L "libmemset_shim.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libmemset_shim.so" "${LIBMEMSET_SHIM}"
-            done
+            grep -q "libmemset_shim.so" "${2}" || "${PATCHELF}" --add-needed "libmemset_shim.so" "${2}"
             ;;
 
         vendor/lib64/hw/gatekeeper.msm8937.so)
@@ -63,9 +57,7 @@ function blob_fixup() {
             ;;
 
         vendor/lib/libmot_gpu_mapper.so)
-            for LIBGUI_SHIM in $(grep -L "libgui_shim_vendor.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libgui_shim_vendor.so" "${LIBGUI_SHIM}"
-            done
+            grep -q "libgui_shim_vendor.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim_vendor.so" "${2}"
             ;;
 
         vendor/lib/libmot_gpu_mapper.so | vendor/lib/libmmcamera_vstab_module.so)
@@ -77,9 +69,7 @@ function blob_fixup() {
             ;;
 
         vendor/lib64/libril-qc-qmi-1.so)
-            for LIBCUTILS_SHIM in $(grep -L "libcutils_shim.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libcutils_shim.so" "${LIBCUTILS_SHIM}"
-            done
+            grep -q "libcutils_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
             ;;
     esac
 }
