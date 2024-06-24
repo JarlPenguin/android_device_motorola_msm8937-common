@@ -182,3 +182,7 @@ on property:persist.enable.usb.charging=1
 
 on property:persist.enable.usb.charging=0
     write /sys/class/power_supply/battery/battery_charging_enabled 0
+
+# USB
+on property:ro.product.vendor.model=*
+    setprop vendor.usb.product_string ${ro.product.vendor.model}

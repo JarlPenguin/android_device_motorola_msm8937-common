@@ -195,5 +195,15 @@ sys.vendor.shutdown.waittime=500
 # Time
 persist.vendor.delta_time.enable=true
 
+# USB
+vendor.usb.controller=msm_hsusb
+vendor.usb.diag.func.name=diag
+vendor.usb.dpl.inst.name=dpl_bam_dmux
+vendor.usb.qdss.inst.name=qdss
+vendor.usb.rmnet.func.name=rmnet_bam
+vendor.usb.rmnet.inst.name=rmnet_bam_dmux
+vendor.usb.rndis.func.name=rndis
+vendor.usb.use_ffs_mtp=1
+
 # Wi-Fi
 wifi.interface=wlan0

@@ -310,7 +310,6 @@ PRODUCT_PACKAGES += \
     fstab_ramdisk.qcom \
     init.mmi.overlay.rc \
     init.mmi.rc \
-    init.msm.usb.configfs.rc \
     init.oem.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
@@ -323,6 +322,7 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
+    init.qcom.usb.sh \
     init.qti.fm.sh
 
 # Recovery
@@ -351,6 +351,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/usb/etc \
     $(LOCAL_PATH)
 
 # Telephony
