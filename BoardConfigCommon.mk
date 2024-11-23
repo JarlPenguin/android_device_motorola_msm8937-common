@@ -128,7 +128,6 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_ENFORCE_QSSI := true
 
 # Recovery
-BOARD_USES_FULL_RECOVERY_IMAGE := true
 ifeq ($(PRODUCT_FULL_TREBLE_OVERRIDE), true)
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_legacy.qcom
 else
