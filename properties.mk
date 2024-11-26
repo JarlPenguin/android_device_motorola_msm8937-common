@@ -146,6 +146,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.disable.split.mode=1 \
     vidc.enc.disable.pq=true
 
+# OEM Unlock reporting
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.oem_unlock_supported=1
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
