@@ -70,8 +70,8 @@ PRODUCT_PACKAGES += \
     libwui
 
 PRODUCT_PACKAGES += \
-    android.hardware.camera.device@3.5 \
-    android.hardware.camera.provider@2.5 \
+    android.hardware.camera.device@3.5:64 \
+    android.hardware.camera.provider@2.5:64 \
     android.hardware.camera.provider@2.5-service \
     vendor.qti.hardware.camera.device@1.0:64
 
