@@ -200,6 +200,7 @@ ro.soc.model=SDM439
 persist.vendor.delta_time.enable=true
 
 # USB
+sys.usb.mtp.batchcancel=1
 vendor.usb.controller=msm_hsusb
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl_bam_dmux
